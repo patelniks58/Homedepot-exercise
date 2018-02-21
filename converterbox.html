@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>Currency converter</title>
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+<body>
+<div class="Contents">
+<h1>Currency Converter</h1>
+
+  <form name="currencyConverter">
+        <div class="FromToBlock">
+        <div class="inputDiv">
+        <label>Type in amount and select currency:</label>
+            <input id="txtFromRate" step="any" value="0" placeholder="100.00" type="text" min="0" maxlength="20">
+            </div>
+              <select id="crFromRate" >
+                <option value="USD">USD</option>
+                				<option value="CAD">CAD</option>
+                				<option value="EUR">EUR</option>
+              </select>
+          </div>
+        <div class="FromToBlock">
+        <div class="inputDiv">
+      <label>Converted amount:</label>
+      <input id="txtToRate" step="any" value="0" type="text" min="0" readonly="readonly">
+      </div>
+      <select id="crToRate">
+      <option value="USD">USD</option>
+      <option value="CAD">CAD</option>
+      <option value="EUR">EUR</option>
+      </select>
+      </div>
+
+
+			<a href="#" id="disclaimerInfo">Disclaimer</a>
+</form>
+
+<script src="js/convertCurrencyscript.js"></script>
+	<script src="js/convertCurrency.js"></script>
+</div>
+</body>
+
+</html>
